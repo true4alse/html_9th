@@ -1,0 +1,30 @@
+*{margin:0;padding:0;}
+.hero{
+    margin:0 20px;
+    height:300px;
+}
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+} 
+.content{
+    width:1000px;
+    height:500px;
+    margin:0 auto;
+}
+.content video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.wrap{
+    width:80%;
+    height:70vh;
+    margin:0 auto;
+}
+.wrap video{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}

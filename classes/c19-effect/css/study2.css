@@ -1,0 +1,58 @@
+.box{
+    border:5px solid #000;
+    width:400px;
+    height:400px;
+    position: relative;
+    overflow: hidden;
+}
+.box img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.box figcaption{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.498);
+    color:#fff;
+    font-size:1.2rem;
+    opacity: 0;
+}
+.box:hover figcaption{
+    opacity: 1;
+}
+.box_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.filter1 img{
+    filter:grayscale(0.6);
+}
+.filter2 img{
+    filter:brightness(0.2);
+}
+.filter3 img{
+    filter: blur(20px);
+}
+.filter4 img{
+    filter:hue-rotate(180deg);
+}
+
+.bg{background:lightcoral;}
+.mode1 img{
+    mix-blend-mode:color-burn;
+}
+.mode2 img{
+    mix-blend-mode: difference;
+}
+.mode3 img{
+    mix-blend-mode: overlay;
+}

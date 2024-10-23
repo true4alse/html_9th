@@ -1,0 +1,39 @@
+*{
+    /* css에서는 수치가0인경우에만 한하여 단위를 생략해서 표현할 수 있다. */
+    margin:0;
+    padding:0;
+}
+#container{
+    border:10px solid black;
+    width:1200px;
+}
+.a{
+    /* box-sizing: content-box; */
+    background: red;
+    width:500px;
+    height:300px;
+}
+.b{
+    background-color: orange;
+    width:500px;
+    height:200px;
+    border:10px solid lime;
+}
+.c{
+    width:500px;
+    height:150px;
+    background-color: green;
+    border: 10px solid aqua;
+    box-sizing: border-box;
+}
+
+
+/* 
+    A : a클래스의 컨텐츠박스 높이 300
+    B : b클래스의 테두리 포함 박스 높이 220
+    C : c클래스의 컨텐츠 박스 높이 130
+    D : container의 테두리 포함 박스 높이 690
+    E : b클래스의 컨텐츠 박스 너비 500
+
+    A+B+C+D+E = 몇 px 일까요?  1840
+*/

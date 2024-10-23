@@ -1,0 +1,62 @@
+.box{
+    border:5px solid #000;
+    width:300px;
+    height:300px;
+}
+.a{
+    transform:translateX(100%);
+    /* 여기서 100%는 너비 300픽셀에 대한 100%라는 뜻 */
+}
+.b{
+    transform:translateY(-50%);
+    /* 여기서 50%는 높이 300픽셀에 대한 50%라는 뜻 */
+}
+.parent{
+    background-color: aquamarine;
+    perspective: 1000px;
+    min-height:900px;
+    perspective-origin: 0% 50%;
+    /* 가장 먼곳의 좌표를 설정할 수 있다. 기본값은 50% 50% 이다. */
+}
+.c{
+    margin-left:auto;
+    transform:translateZ(-1000px);
+}
+.d{
+    transform-origin: 100% 50%;
+    /* 변형의 기준좌표 - 50% 50% 가 기본값 */
+    transition:all 1s ease 0s;
+}
+.d:hover{
+    transform:rotate(-30deg);
+}
+.e,.f{
+    transition:all 3s ease 0s;
+}
+.e:hover{
+    transform:rotateY(360deg);
+}
+.f:hover{
+    transform:rotateX(180deg);
+}
+.g{
+    margin:0 auto;
+    transition: all 1s ease 0s;
+    transform-origin: 100% 50%;
+}
+.g:hover{
+    transform:scaleX(200%);
+}
+.h{
+    transition:all 1s ease 0s;
+}
+.h:hover{
+    transform: scaleY(200%);
+}
+.i{
+    transition:all 1s ease 0s;
+}
+.i:hover{
+    transform:scale(2,3);
+    /* scale(2)라고 값을 1개만 적으면 x축 y축 둘다 값이 2로 동일한 경우의 축약표현이다. */
+}
