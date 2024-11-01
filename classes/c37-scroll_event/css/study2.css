@@ -1,0 +1,85 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+a{color:inherit;text-decoration: inherit;}
+
+header{
+    position:fixed;
+    width:100%;
+    height:100px;
+    left:0;
+    top:0;
+    background-color: blueviolet;
+    color:#fff;
+}
+.gnb{
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    height:100%;
+}
+.gnb>li{
+    flex:1;
+}
+.gnb>li a{
+    display: flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.gnb>li a:hover{
+    background-color: aquamarine;
+    color:#000;
+}
+.wrap{
+    margin-top:100px;
+}
+.wrap section{
+    height:2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:5rem;
+    font-weight: bold;
+}
+#section_home{
+    background-color: salmon;
+}
+#section_service{
+    background-color: seagreen;
+}
+#section_project{
+    background-color: firebrick;
+}
+#section_community{
+    background-color: rebeccapurple;
+}
+#section_contact{
+    background-color: goldenrod;
+}
+footer{
+    height:600px;
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:5rem;
+    font-weight: bold;
+}
+.progressBar{
+    position:fixed;
+    left:50px;
+    bottom:50px;
+    width:500px;
+    height:40px;
+    background-color: #ddd;
+}
+.percentBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    height:100%;
+    background-color: lime;
+}

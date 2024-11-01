@@ -1,0 +1,24 @@
+*{margin:0;padding:0;}
+html{
+    font-family: "Chonburi", serif;
+}
+  
+.clock{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock.day{
+    background: url("../img/day.jpg") no-repeat 50% 50% / cover;
+}
+.clock.night{
+    background: url("../img/night.jpg") no-repeat 50% 50% / cover;
+}
+#time{
+    color:#fff;;
+    text-shadow: 0 0 10px #fff;
+    width:60%;
+}
+.day{font-size:4rem;}
+.time{font-size:15rem;}

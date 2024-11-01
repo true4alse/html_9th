@@ -60,7 +60,7 @@
                 gender:"남자",
                 age:44,
                 married:false,
-                hobies:["어항관리","고양이관리","달리기"]
+                hobies:["어항관리","고양이관리","달리기","요리하기","넷플릭스","왓챠보기","비판하기"]
             },
             {
                 name:"이지은",
@@ -158,7 +158,21 @@
     <script>
         document.write(`<ul class="classmate">`)
         for(let i=0 ; i<12 ; i++){
-            document.write(`<li>${classmatesObjectArray[i].name}</li>`)
+            let hobbies = ""
+            for(let j=0 ; j<classmatesObjectArray[i].hobies.length ; j++){
+                hobbies = hobbies + "<li>"+classmatesObjectArray[i].hobies[j]+"</li>"
+            }
+
+            document.write(`
+            <li>
+                <h2>${classmatesObjectArray[i].name}</h2>
+                <p>성별:${classmatesObjectArray[i].gender}</p>
+                <p>나이:${classmatesObjectArray[i].age}</p>
+                <p>결혼여부:${classmatesObjectArray[i].married?"기혼":"미혼"}</p>
+                <h3>취미</h3>
+                <ul>${hobbies}</ul>
+            </li>
+            `)
         }
             // <li>${classmatesObjectArray[0].name}</li>
             // <li>${classmatesObjectArray[1].name}</li>

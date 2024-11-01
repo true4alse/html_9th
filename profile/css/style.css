@@ -288,11 +288,15 @@ header .innerContent{
     background-color: #F33738;
     border:none;
 }
+.con5{
+    padding-top:7rem;
+}
 .con5 .innerContent{
     text-align: center;
 }
 .slideStation{
     overflow: hidden;
+    margin-top:2rem;
 }
 .train{
     width:300%;
