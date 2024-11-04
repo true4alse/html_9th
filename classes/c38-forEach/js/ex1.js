@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener("load",function(){
 
     let tagArray = document.querySelectorAll("h1")
 
@@ -18,4 +18,10 @@ window.onload = function(){
 
     })
 
-}
+})
+// window.onload = function(){
+
+//     // 윈도우가 다 읽혀진 후 한번 실행되는 코드
+
+// }
+

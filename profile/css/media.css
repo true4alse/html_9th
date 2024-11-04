@@ -37,6 +37,12 @@
 @media (max-width:1000px){
     
     /* 모바일 스타일 */
+    .pagination{
+        top:calc(400px - 2rem);
+    }
+    .train>li figure{
+        height:400px;
+    }
     .train>li .innerContent section:nth-of-type(1){
         margin-right:1rem;
     }
@@ -143,6 +149,12 @@
     }
 }
 @media (max-width:768px){
+    .pagination{
+        top:1rem;
+    }
+    .train>li figure{
+        height:auto;
+    }
     .btnDown{display:none;}
     .con5 .innerContent br{
         display: none;
@@ -165,6 +177,7 @@
     }
 }
 @media (max-width:300px) {
+    
     html{
         word-break: break-all;
     }

@@ -16,5 +16,36 @@ window.onload = function(){
             document.querySelector("nav.mo").classList.remove("on")
         })
     }
+
+    let flag = false
+    window.addEventListener("scroll",function(){
+        flag = setAnimationToTag(flag)
+    })
+
+    // 배너슬라이드기능
+    let button_page = document.querySelectorAll(".pagination>span")
+    let banner_train = document.querySelector(".train")
+
+    function moveTrain(count){
+        banner_train.style.transform = `translateX(${-33.333*count}%)`
+    }
+    function pagination(count){
+        button_page.forEach(function(btn){
+            btn.classList.remove("on")
+        })
+        button_page[count].classList.add("on")
+    }
+    button_page.forEach(function(btnpage,index){
+        btnpage.addEventListener("click",function(){
+            moveTrain(index)
+            pagination(index)
+        })
+    })
+
+
+
+
+
+
     
 }

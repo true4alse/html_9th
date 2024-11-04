@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <script src="./js/common.js"></script>
+    <script src="./js/setAnimationToTag.js"></script>
 </head>
 <body>
     <nav class="mo">
@@ -83,14 +84,14 @@
     </div>  
     <div class="con1" id="con1">
         <div class="innerContent">
-            <h3><mc>about me</mc></h3>
-            <h4><mc>Designing</mc> Experiences</h4>
-            <p class="desc">
+            <h3 class="moveLtoR"><mc>about me</mc></h3>
+            <h4 class="moveLtoR"><mc>Designing</mc> Experiences</h4>
+            <p class="desc moveLtoR">
                 저는 기본에 충실한 디자인을 선호합니다. 군더더기 없는 깔끔함 속에서 <mc>본질을 담아내는 것이 중요하다고 생각합니다.</mc><br>
                 불필요한 요소를 배제하고 본질에 집중하는 것이 최고의 아름다움을 만든다고 믿습니다.<br>
                 단순하지만 강렬한, 그런 디자인을 추구합니다.
             </p>
-            <a href="#" class="btnCommon">소개페이지로 이동</a>
+            <a href="#" class="btnCommon moveRtoL">소개페이지로 이동</a>
             <figure class="con1img">
                 <img src="./img/prosection.jpg" alt="프로필 이미지">
             </figure>
@@ -99,42 +100,42 @@
     <div class="con2">
         <div class="innerContent">
             <section class="pro1">
-                <h3><mc>DESIGN SKILLS</mc></h3>
-                <h4>SKILLS<br>
+                <h3 class="moveLtoR"><mc>DESIGN SKILLS</mc></h3>
+                <h4 class="moveLtoR">SKILLS<br>
                     I’VE<br>
                     DEVELOPED<br>
                     FOR <mc>WEB<br>
                     DESIGN</mc></h4>
-                <p>저는 웹디자인을 위해 다양한 기술을 공부해왔습니다. HTML과 CSS를기본으로, JavaScript를 활용한 동적인 웹 페이지 제작에 능숙합니다. 또한,Photoshop과 Illustrator를 이용한 그래픽 디자인과 함께, Figma를 활용한 UI/UX 디자인에도 자신이 있습니다.</p>
-                <p>반응형 디자인을 구현하기 위해 미디어 쿼리와 Flexbox, Grid 시스템에 대해 깊이 있게 이해하고 있습니다. 최신 트렌드를 반영한 사용자 친화적인 인터페이스를 만들기 위해 지속적으로 학습하고 있습니다.</p>
+                <p class="moveLtoR">저는 웹디자인을 위해 다양한 기술을 공부해왔습니다. HTML과 CSS를기본으로, JavaScript를 활용한 동적인 웹 페이지 제작에 능숙합니다. 또한,Photoshop과 Illustrator를 이용한 그래픽 디자인과 함께, Figma를 활용한 UI/UX 디자인에도 자신이 있습니다.</p>
+                <p class="moveLtoR">반응형 디자인을 구현하기 위해 미디어 쿼리와 Flexbox, Grid 시스템에 대해 깊이 있게 이해하고 있습니다. 최신 트렌드를 반영한 사용자 친화적인 인터페이스를 만들기 위해 지속적으로 학습하고 있습니다.</p>
             </section>
             <section class="pro2">
                 <dl>
-                    <dt>NAME</dt>
-                    <dd>정현진</dd>
-                    <dt>AGE</dt>
-                    <dd>46</dd>
-                    <dt>GENDER</dt>
-                    <dd>남자</dd>
-                    <dt class="w100">CHARACTER</dt>
-                    <dd class="w100">
-                        <ul class="charList">
+                    <dt class="moveLtoR">NAME</dt>
+                    <dd class="moveLtoR">정현진</dd>
+                    <dt class="moveLtoR">AGE</dt>
+                    <dd class="moveLtoR">46</dd>
+                    <dt class="moveLtoR">GENDER</dt>
+                    <dd class="moveLtoR">남자</dd>
+                    <dt class="w100 moveLtoR">CHARACTER</dt>
+                    <dd class="w100 moveLtoR">
+                        <ul class="charList moveLtoR">
                             <li class="rev">보수적임</li>
                             <li>뒤끝김</li>
                             <li>꼼꼼함</li>
                         </ul>
-                        <p>저는 꼼꼼한 성격으로, 세부사항 하나하나까지 철저히 신경쓰며 일을 처리합니다. 이 덕분에 실수가 적고, 항상 높은품질의 결과를 보장할 수 있습니다.</p>
-                        <p>저는 보수적인 성격으로, 변화를 신중히 고려하고 안정성을 
+                        <p class="moveRtoL">저는 꼼꼼한 성격으로, 세부사항 하나하나까지 철저히 신경쓰며 일을 처리합니다. 이 덕분에 실수가 적고, 항상 높은품질의 결과를 보장할 수 있습니다.</p>
+                        <p class="moveRtoL">저는 보수적인 성격으로, 변화를 신중히 고려하고 안정성을 
                             중요시합니다. 이러한 성향 덕분에 계획적이고 신뢰할 수 
                             있는 방식으로 문제를 해결하며, 예측 가능한 결과를 
                             추구합니다.</p>
-                        <p>저는 뒤끝이 긴 성격으로, 한 번 시작한 일이나 문제를 끝까지 해결하려는 강한 집착을 가지고 있습니다. 이 덕분에 어떤 
+                        <p class="moveRtoL">저는 뒤끝이 긴 성격으로, 한 번 시작한 일이나 문제를 끝까지 해결하려는 강한 집착을 가지고 있습니다. 이 덕분에 어떤 
                             어려움이 있어도 포기하지 않고, 철저하게 마무리하는 자세를 통해 뛰어난 성과를 이끌어냅니다.</p>
                     </dd>
                 </dl>
             </section>
             <section class="pro3">
-                <dl>
+                <dl class="moveRtoL">
                     <dt>CERTIFICATION</dt>
                     <dd>
                         <ul class="certList">
@@ -160,7 +161,7 @@
         <div class="innerContent">
             <h5>EDUCATIONS</h5>
             <ul class="eduList">
-                <li>
+                <li class="moveRtoL">
                     <h6>
                         <img src="./img/edu1.svg" alt="illustrator">
                         ADOBE ILLUSTRATOR
@@ -169,7 +170,7 @@
                         벡터 기반의 그래픽 디자인과 아이콘 제작을 통해 선명하고 확장 가능한 디자인을 제공하며, 다양한 디자인 작업을 수행할 수 있습니다.
                     </p>
                 </li>
-                <li>
+                <li class="moveRtoL">
                     <h6>
                         <img src="./img/edu2.svg" alt="photoshop">
                         ADOBE PHOTOSHOP
@@ -178,7 +179,7 @@
                         이미지 편집과 복잡한 그래픽 디자인 작업을 통해 고품질의 시각 콘텐츠를 제작하며, 다양한 스타일과 효과를 적용할 수 있습니다.
                     </p>
                 </li>
-                <li>
+                <li class="moveRtoL">
                     <h6>
                         <img src="./img/edu3.svg" alt="FIGMA">
                         FIGMA
@@ -187,7 +188,7 @@
                         협업 디자인 도구를 활용하여 UI/UX 디자인을 신속하게 프로토타입화하고, 실시간으로 팀원들과 효율적으로 협업할 수 있습니다.
                     </p>
                 </li>
-                <li>
+                <li class="moveRtoL">
                     <h6>
                         <img src="./img/edu4.svg" alt="HTML5">
                         HTML5
@@ -196,7 +197,7 @@
                         최신 HTML5 기능을 활용하여 구조적이고 의미 있는 웹 콘텐츠를 작성하며, 접근성 높은 웹 페이지를 구축할 수 있습니다.
                     </p>
                 </li>
-                <li>
+                <li class="moveRtoL">
                     <h6>
                         <img src="./img/edu5.svg" alt="CSS3">
                         CSS3
@@ -205,7 +206,7 @@
                         고급 스타일링 기법과 애니메이션을 통해 시각적으로 매력적이고 반응형 디자인을 구현하여 사용자 경험을 극대화합니다.
                     </p>
                 </li>
-                <li>
+                <li class="moveRtoL">
                     <h6>
                         <img src="./img/edu6.svg" alt="JAVASCRIPT">
                         JAVASCRIPT
@@ -214,7 +215,7 @@
                         동적인 웹 페이지를 개발하고, 사용자 상호작용을 강화하기 위해 JavaScript를 이용하여 복잡한 기능을 효과적으로 구현할 수 있습니다.
                     </p>
                 </li>
-                <li>
+                <li class="moveRtoL">
                     <h6>
                         <img src="./img/edu7.svg" alt="JQUERY">
                         JQUERY
@@ -232,7 +233,7 @@
             <h4>POPUP DESIGNS</h4>
             <p>이 팝업은 업계의 모범 사례를 벤치마킹하여 직접 제작한 것입니다. 선도적인<br>예제들에서 얻은 인사이트와 요소들을 반영하여 효과적이고 시각적으로<br>매력적인 사용자 경험을 제공합니다.</p>
             <ul class="popupList">
-                <li>
+                <li class="moveLtoR">
                     <figure class="border">
                         <img src="./img/popups/popup1-100.jpg" alt="블랙프라이데이팝업">
                     </figure>
@@ -260,7 +261,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure>
                         <img src="./img/popups/popup2-100.jpg" alt="나이키신발팝업">
                     </figure>
@@ -284,7 +285,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure>
                         <img src="./img/popups/popup3-100.jpg" alt="블랙프라이데이팝업">
                     </figure>
@@ -312,7 +313,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure class="border">
                         <img src="./img/popups/popup1-100.jpg" alt="블랙프라이데이팝업">
                     </figure>
@@ -340,7 +341,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure>
                         <img src="./img/popups/popup2-100.jpg" alt="나이키신발팝업">
                     </figure>
@@ -364,7 +365,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure>
                         <img src="./img/popups/popup3-100.jpg" alt="블랙프라이데이팝업">
                     </figure>
@@ -392,7 +393,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure class="border">
                         <img src="./img/popups/popup1-100.jpg" alt="블랙프라이데이팝업">
                     </figure>
@@ -420,7 +421,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure>
                         <img src="./img/popups/popup2-100.jpg" alt="나이키신발팝업">
                     </figure>
@@ -444,7 +445,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li class="moveLtoR">
                     <figure>
                         <img src="./img/popups/popup3-100.jpg" alt="블랙프라이데이팝업">
                     </figure>
@@ -581,6 +582,11 @@
                     </div>
                 </li>
             </ul>
+            <div class="pagination">
+                <span class="on">1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
         </div>
     </div>
     

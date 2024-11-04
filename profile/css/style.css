@@ -41,7 +41,6 @@ header .innerContent{
     object-fit: cover;
 }
 .heroDesc{
-    
     position: absolute;
     width:100%;
     height:100%;
@@ -297,11 +296,33 @@ header .innerContent{
 .slideStation{
     overflow: hidden;
     margin-top:2rem;
+    position: relative;
+}
+.pagination{
+    position: absolute;
+    left:50%;
+    top:calc(600px - 2rem);
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+}
+.pagination span{
+    border-radius: 50%;
+    width:0.8rem;
+    height:0.8rem;
+    font-size: 0;
+    margin:0 0.5rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+.pagination span.on{
+    background-color: var(--main-color);
 }
 .train{
     width:300%;
     display: flex;
-    animation: slideMoveHorizontal 12s ease 0s infinite;
+    transition: all 0.5s ease 0s;
+    /* animation: slideMoveHorizontal 12s ease 0s infinite; */
 }
 .train>li{
     /* width:calc(100%/3); */
@@ -310,12 +331,12 @@ header .innerContent{
 .train>li figure{
     line-height: 0;
     /* width:100%; */
-    /* height:600px; */
+    height:600px;
 }
 .train>li figure img{
     width:100%;
-    /* height:100%; */
-    /* object-fit: cover; */
+    height:100%;
+    object-fit: cover;
 }
 .train>li .innerContent{
     display: flex;

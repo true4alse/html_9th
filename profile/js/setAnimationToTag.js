@@ -54,5 +54,5 @@ function setAnimationToTag(flag){
     animationDetailsetting(".moveLtoR")
     animationDetailsetting(".moveRtoL")
 
-    return !flag
+    return true
 }
