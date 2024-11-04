@@ -1,8 +1,10 @@
 // this 
 // window
+console.log(this)
 $(document).ready(function(){
     //문서가 읽혀진 뒤 실행되는 소스코드
     // $(this)
+    console.log(this)
     $(".naverlink").css("text-decoration","none")
     let href = $(".naverlink").attr("href") // 기존에 설정되어있던 속성값을 불러올 수 있다.
     console.log(href)
