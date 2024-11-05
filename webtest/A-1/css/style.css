@@ -101,22 +101,22 @@ header{
     justify-content: center;
     align-items: center;
 }
-dl.tab_menu{
-    width:100%;
-    height:100%;
-    position:relative;
-}
-dl.tab_menu>dt{
-    width:100px;
-    height:50px;
+.tabs{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border:1px solid #000;
+    margin-bottom: 10px;
 }
-dl.tab_menu>dd{
-    
+.tabs a{
+    padding:10px;
+    border:1px solid salmon;
 }
+.tabs a.on{
+    background-color: salmon;
+}
+.tab_contents > ul{display: none;;}
+.notice_list.on{display: block;}
+.gallery_list.on{display: flex;}
+.tab_menu{width:94%;}
+
 .notice_list>li{
     display: flex;
     justify-content: space-between;
