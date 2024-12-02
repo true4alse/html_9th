@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:grid;</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>display:grid</h1>
+    <p>display:grid는 격자모양 레이아웃으로 설정하는 속성이다. 그리드 레이아웃은 행과 열을 기준하여 요소를 정렬하며, 플렉스와 마찬가지로 그리드컨테이너와 그리드아이템이 상하관계로 놓여있는 레이아웃이다.</p>
+
+    <hr>
+
+    <h2>그리드 컨테이너에 지정하는 속성</h2>
+    <h3>display:grid</h3>
+    <p>선택한 태그를 그리드컨테이너로 지정한다.</p>
+
+    <h3>grid-template-columns</h3>
+    <p>그리드 열의 크기와 개수를 설정할 수 있다. 열의 크기에서 1fr단위를 사용하여 비율을 표현할 수 있으며, css에서 사용하는 모든 단위를 사용할 수 있다. (px,rem,em,...등)</p>
+    <p>띄어쓰기를 사용하여 열의 개수를 표현할 수 있다.</p>
+    <p>repeat()함수를 사용하여 반복되는 수치를 쉽게 작성할 수 있다.</p>
+
+    <h3>grid-template-rows</h3>
+    <p>그리드의 행의 크기와 개수를 설정한다. 띄어쓰기를 사용하여 행의 개수를 표현할 수 있다.</p>
+    <p>minmax()함수를 사용하여 최소크기와 최대크기를 지정할 수 있다.</p>
+
+    <h3>grid-auto-rows</h3>
+    <p>grid-template-rows속성은 명시적으로 행의 높이를 띄어쓰기와 함께 입력하여 사용하는 것이라면, grid-auto-rows는 암시적으로 아직 만들어지지 않았지만 나중에 만들어질 수도 있는 행의 높이를 자동으로 설정하여 줄 수 있다.</p>
+
+    <h3>gap</h3>
+    <p>아이템 사이의 간격을 조절할 수 있다.</p>
+    <p>띄어쓰기를 사용하여 상하/좌우 gap을 설정할 수 있다.</p>
+
+    <h3>justify-items</h3>
+    <p>메인축기준으로 아이템들을 정렬하는 속성이다. 기본값은 stretch 이고 start/end/center 값을 사용할 수 있다.</p>
+
+    <h3>align-items</h3>
+    <p>교차축기준으로 아이템들을 정렬하는 속성이다. 기본값은 stretch 이고 start/end/center 값을 사용할 수 있다.</p>
+
+    <h2>그리드 아이템에 지정하는 속성</h2>
+    <h3>grid-column</h3>
+    <p>선택한 그리드아이템의 열을 몇 번라인부터 얼만큼 차지할 것인지 지정하는 속성</p>
+    <p>grid-column:1/3 -> 열을 1번라인부터 3번라인까지 차지하겠다라는 표현이며, grid-column-start:1 / grid-column-end:3 으로 표현할 수 있으나 아무도 이렇게 안씀. 축약형 사용.</p>
+    
+    <h3>grid-row</h3>
+    <p>선택한 그리드아이템의 행을 몇 번라인부터 얼만큼 차지할 것인지 지정하는 속성 위와 같은 표현규칙이 적용된다.</p>
+
+    <h3>justify-self</h3>
+    <p>justify-items의 아이템용 버전으로 메인축 기준 정렬을 의미한다 stretch/start/center/end 사용</p>
+
+    <h3>align-self</h3>
+    <p>align-items의 아이템용 버전으로 교차축 기준 정렬을 의미한다 stretch/start/center/end 사용</p>
+
+
+    <div class="grid_box">
+        <section>section1</section>
+        <section>section2</section>
+        <section>section3</section>
+        <section>section4</section>
+        <section>section5</section>
+        <section>section6</section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis repellat! Ut perferendis pariatur officiis aperiam fugit similique consectetur temporibus reprehenderit laudantium soluta dolorum minima, voluptas magnam blanditiis modi inventore.
+            section7
+        </section>
+        <section>section8</section>
+        <section>section9</section>
+        <section>section10</section>
+        <section>section11</section>
+        <section>section12</section>
+    </div>
+</body>
+</html>

@@ -3,11 +3,11 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
-<body class="admin">
-
+<body class="">
+    <aside class="fixed_menu"></aside>
     <div class="modal"></div>
     <div class="popups">
-        <div class="popup_title">선택한 항목들을 삭제하시겠습니까?</div>
+        <div class="popup_title">이 글을 삭제하시겠습니까?</div>
         <div class="popup_ctl">
             <span class="btn_common yes" id="btn_delete_yes">네</span>
             <span class="btn_common popupno" id="btn_delete_no">아니요</span>
@@ -33,7 +33,7 @@
             </section>
             <section class="option_admin button_list">
                 <a href="#"><img src="./img/button_edit.svg" alt="글 수정하기"></a>
-                <a href="#"><img src="./img/button_delete.svg" alt="글 삭제하기"></a>
+                <a href="#" id="btn_delete"><img src="./img/button_delete.svg" alt="글 삭제하기"></a>
             </section>
         </div>
         <div class="commonFrame view_txt bb smb">
