@@ -1,0 +1,25 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+a{color:inherit;text-decoration: inherit;;}
+img{max-width: 100%;}
+.list{
+    width:1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+.list img{
+    height:300px;
+    width:100%;
+    object-fit: cover;
+}
+.detail{
+    width:1200px;
+    margin:0 auto;
+    display: flex;;
+    gap:20px;
+}
+.detail>*{
+    flex:1;
+}

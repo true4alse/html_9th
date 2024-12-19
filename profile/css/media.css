@@ -149,6 +149,15 @@
     }
 }
 @media (max-width:768px){
+    .con7 h2 {
+        font-size: 2rem;
+    }
+    .pcimg{
+        display: none;
+    }
+    .moimg{
+        display: block;
+    }
     .pagination{
         top:1rem;
     }

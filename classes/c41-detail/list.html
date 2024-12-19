@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품리스트</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/animal.js"></script>
+</head>
+<body>
+    <h1>상품리스트</h1>
+    <div class="tabs">
+        <a href="#" data-gender="전체">전체보기</a>
+        <a href="#" data-gender="남">남 아만 보기</a>
+        <a href="#" data-gender="여">여 아만 보기</a>
+    </div>
+    <ul class="list" id="list"></ul>
+    <script>
+        
+        let tabs = document.querySelectorAll(".tabs>a")
+        tabs.forEach(function(tab){
+            tab.addEventListener("click",function(){
+                let category = tab.getAttribute("data-gender")
+                let result_array = null
+                if(category=="전체"){
+                    result_array = animal_array
+                }else{
+                    result_array = animal_array.filter(cat => cat.pgender === category)
+                }
+                console.log(result_array)
+                let lists = ""
+                for(let i=0 ; i<result_array.length ; i++){
+                    lists += `<li>
+                        <a href="./detail.html?pid=${result_array[i].pid}">
+                            <img src="./img/${result_array[i].pimg_file_name}" alt="${result_array[i].pname}">
+                            <h2>${result_array[i].pname}</h2>
+                            <p>${result_array[i].pgender} 아 / ${result_array[i].page}</p>
+                        </a>
+                    </li>`
+                }
+                document.querySelector("#list").innerHTML = lists
+            })
+        })
+
+        let lists = "";
+        if(animal_array.length){
+                for(let i=0 ; i<animal_array.length ; i++){
+                lists += `<li>
+                    <a href="./detail.html?pid=${animal_array[i].pid}">
+                        <img src="./img/${animal_array[i].pimg_file_name}" alt="${animal_array[i].pname}">
+                        <h2>${animal_array[i].pname}</h2>
+                        <p>${animal_array[i].pgender} 아 / ${animal_array[i].page}</p>
+                    </a>
+                </li>`
+            }
+        }else{
+            lists = "입양 가능한 아이가 없습니다."
+        }
+        
+        
+
+        console.log(lists)
+        document.querySelector("#list").innerHTML = lists
+    </script>
+</body>
+</html>

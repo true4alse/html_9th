@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/animal.js"></script>
+</head>
+<body>
+    
+    <div class="detail" id="detail">
+        <div class="img">
+            <img src="./img/cat1.jpg" alt="피고니">
+        </div>
+        <div class="txt">
+            <h2>입양 아이 정보</h2>
+            <dl>
+                <dt>이름 : </dt>
+                <dd>피곤이</dd>
+                <dt>나이 : </dt>
+                <dd>1살</dd>
+                <dt>성별 : </dt>
+                <dd>여 아</dd>
+                <dt>품종 : </dt>
+                <dd>아메리칸 숏헤어</dd>
+                <dt>접종유무 :</dt>
+                <dd>O</dd>
+                <dt>중성화유무 : </dt>
+                <dd>O</dd>
+            </dl>
+                
+            <p class="desc">
+
+아이조아 서울점에서
+
+먼치킨 '나나' 소개해드릴게요😘 
+
+
+
+나나는 보기에는
+
+시크하고 도도할것 같지만
+
+정말 애교가 엄청 많은 아이랍니다 !
+
+
+
+짧은 다리에
+
+풍성한 모량을 가지고 있는
+
+미묘냥이중에 미모냥이구요!
+
+
+
+손만 보면 헤드번팅하러 돌진하고
+
+벌러덩 누워서는
+
+이쁜 눈으로 지그시 눈맞춤해주는
+
+개냥이중에 개냥이예요😣
+            </p>
+        </div>
+    </div>
+    <script>
+        let pid = location.href.split("?")[1].split("=")[1]
+        console.log(animal_array[pid])
+
+        document.querySelector("#detail").innerHTML = `
+        <div class="img">
+            <img src="./img/${animal_array[pid].pimg_file_name}" alt="${animal_array[pid].pname}">
+        </div>
+        <div class="txt">
+            <h2>입양 아이 정보</h2>
+            <dl>
+                <dt>이름 : </dt>
+                <dd>${animal_array[pid].pname}</dd>
+                <dt>나이 : </dt>
+                <dd>${animal_array[pid].page}</dd>
+                <dt>성별 : </dt>
+                <dd>${animal_array[pid].pgender} 아</dd>
+                <dt>품종 : </dt>
+                <dd>아메리칸 숏헤어</dd>
+                <dt>접종유무 :</dt>
+                <dd>${animal_array[pid].Vaccinated?"O":"X"}</dd>
+                <dt>중성화유무 : </dt>
+                <dd>${animal_array[pid].Neutered?"O":"X"}</dd>
+            </dl>
+            <p class="desc">
+                ${animal_array[pid].pdesc}
+            </p>
+        </div>
+    `
+        
+        
+        
+    </script>
+    
+</body>
+</html>

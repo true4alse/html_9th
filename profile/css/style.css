@@ -376,3 +376,49 @@ header .innerContent{
     display: flex;
     align-items: center;
 }
+.con6{
+    padding-top: 7rem;
+}
+.con6 .innerContent{
+    text-align: center;
+}
+.project{
+    padding-top: 3.5rem;
+}
+.project img{
+    width:100%;
+}
+.moimg{
+    display: none;
+}
+.project_menu{
+    display: flex;;
+    position: sticky;
+    top:5.5rem;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.project_menu a{
+    display: block;
+    padding:.5rem 1rem;
+    background-color: var(--main-color);
+    color:#fff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #ccc;
+}
+.project_menu a:hover{
+    color:#000;
+}
+.con7{
+    padding: 7rem 0;
+    text-align: center;
+}
+.con7>*>*{
+    margin:1rem 0;
+}
+.con7 h2{
+    font-size:7rem;
+    font-weight: bold;
+    margin:5rem 0;
+}
