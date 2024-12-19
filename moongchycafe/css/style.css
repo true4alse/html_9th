@@ -647,3 +647,49 @@ textarea{
     margin-bottom: var(--space-middle);
     width:60%;
 }
+.consulting_form{
+    margin-top: var(--space-xlarge);
+    padding-top: var(--space-large);
+    margin-bottom: var(--space-large);
+}
+.consult1{
+    margin-bottom: var(--space-large);
+}
+.consult1>*{
+    margin-bottom: var(--space-small);
+}
+.consult1>*:last-child{
+    margin-bottom: 0;
+}
+.consult1 h3{
+    margin: var(--space-middle) 0;
+}
+.terms{
+    border: 1px solid var(--inactive-color);
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.consult2>*{
+    margin-bottom: var(--space-small);
+}
+.consult2>*:last-child{
+    margin-bottom: 0;
+}
+.consult2 h3{
+    margin: var(--space-middle) 0;
+}
+.consult2 table{
+    width:100%;
+}
+.consult2 table th{
+    text-align: left;
+    width:14%;
+}
+.consult2 table tr{
+    height:4rem;
+}
+.submit{
+    border-top: 2px solid #000;
+    padding-top: var(--space-small);
+}
