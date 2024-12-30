@@ -1,0 +1,25 @@
+*{
+    margin:0;padding:0;
+}
+#svg1{
+    border:1px solid black;
+    /* width:800px;
+    height:800px; */
+}
+.rect1{
+    fill:rgb(250, 100, 13);
+    stroke-width: 3px;
+    stroke: blue;
+    stroke-dasharray: 10px;
+    transition:all 1s ease 0s;
+}
+.rect1:hover{
+    stroke-dasharray: 0px;
+    fill:gold;
+}
+.rect2{
+    fill:orange;
+}
+.circle1{
+    fill:rgb(21, 135, 19);
+}

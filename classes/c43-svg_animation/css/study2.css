@@ -1,0 +1,17 @@
+*{
+    margin:0;padding:0;
+}
+#svg1{
+    border:1px solid black;
+}
+#svg1 circle{
+    fill: orange;
+    stroke:black;
+    stroke-width: 10;
+    /* stroke-dasharray:1256;
+    stroke-dashoffset: 1256; */
+    /* transition: all 1s ease 0s; */
+}
+#svg1 circle:hover{
+    stroke-dashoffset: 0;
+}
